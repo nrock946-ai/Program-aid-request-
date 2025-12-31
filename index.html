@@ -3,65 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UN AID REQUEST - Humanitarian Aid for States</title>
+    <title>Submit Aid Request - UN AID REQUEST</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Google Translate Widget -->
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,es,de',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
     <style>
-        body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; background: #f5f7fa; color: #333; line-height: 1.7; }
-        header { 
-            background: linear-gradient(rgba(0, 51, 102, 0.9), rgba(0, 51, 102, 0.8)), url('https://images.unsplash.com/photo-1532629341890-5b1720c2a9f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
-            background-size: cover; background-position: center; color: white; padding: 120px 20px; text-align: center;
-        }
-        .logo-icon { width: 140px; height: auto; margin-bottom: 30px; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.4)); }
-        h1 { font-family: 'Playfair Display', serif; font-size: 4em; margin: 0; text-shadow: 0 3px 10px rgba(0,0,0,0.5); }
-        header p { font-size: 1.6em; margin: 25px 0 50px; max-width: 900px; margin-left: auto; margin-right: auto; }
-        nav a { color: white; margin: 0 40px; font-size: 1.3em; font-weight: bold; text-decoration: none; padding: 10px 20px; border-bottom: 3px solid transparent; transition: border 0.3s; }
-        nav a:hover { border-bottom: 3px solid #fff; }
-        section { max-width: 1100px; margin: 60px auto; padding: 50px; background: white; border-radius: 15px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); text-align: center; }
-        .mission p { font-size: 1.3em; max-width: 900px; margin: 30px auto; }
-        .bio { display: flex; flex-wrap: wrap; align-items: center; gap: 60px; margin: 80px 0; justify-content: center; }
-        .bio img { width: 320px; border-radius: 15px; box-shadow: 0 8px 30px rgba(0,0,0,0.2); }
-        .bio-text { flex: 1; min-width: 300px; text-align: left; }
-        .bio-text h2 { color: #003366; font-size: 2em; }
-        .team img { width: 100%; max-width: 1000px; border-radius: 15px; box-shadow: 0 8px 30px rgba(0,0,0,0.2); margin: 40px 0; }
-        .apply-btn { display: inline-block; background: #0066cc; color: white; padding: 25px 70px; font-size: 2em; font-weight: bold; text-decoration: none; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,102,204,0.4); transition: all 0.4s; }
-        .apply-btn:hover { background: #00509e; transform: translateY(-5px); box-shadow: 0 15px 40px rgba(0,102,204,0.5); }
-        footer { background: #001f3f; color: white; text-align: center; padding: 40px; font-size: 1.1em; }
+        body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; background: #f5f7fa; }
+        header { background: linear-gradient(rgba(0, 51, 102, 0.9), rgba(0, 51, 102, 0.8)), url('https://images.unsplash.com/photo-1532629341890-5b1720c2a9f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80'); background-size: cover; color: white; padding: 120px 20px; text-align: center; }
+        .logo-icon { width: 140px; margin-bottom: 30px; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.4)); }
+        h1 { font-family: 'Playfair Display', serif; font-size: 3.5em; text-shadow: 0 3px 10px rgba(0,0,0,0.5); }
+        nav a { color: white; margin: 0 40px; font-size: 1.3em; font-weight: bold; text-decoration: none; }
+        #google_translate_element { margin-top: 20px; }
+        .goog-te-gadget-simple { background-color: rgba(255,255,255,0.2) !important; border: none !important; padding: 10px 15px !important; border-radius: 10px !important; font-size: 1.1em !important; }
+        .goog-te-gadget-simple a { color: white !important; }
+        section { max-width: 900px; margin: 60px auto; padding: 50px; background: white; border-radius: 15px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
+        form { display: grid; gap: 25px; }
+        label { font-weight: bold; color: #003366; }
+        input, textarea { padding: 15px; border: 1px solid #ccc; border-radius: 8px; font-size: 1.1em; }
+        button { background: #0066cc; color: white; padding: 20px; font-size: 1.5em; border: none; border-radius: 12px; cursor: pointer; font-weight: bold; }
+        button:hover { background: #00509e; }
+        footer { background: #001f3f; color: white; text-align: center; padding: 40px; }
     </style>
 </head>
 <body>
     <header>
         <img src="https://cdn-icons-png.flaticon.com/512/3039/3039378.png" alt="UN AID REQUEST" class="logo-icon">
         <h1>UN AID REQUEST</h1>
-        <p>Humanitarian & Development Aid Platform for State Programs</p>
+        <p>Submit Large-Scale Aid Request ($1M – $15M)</p>
         <nav>
             <a href="index.html">About Us</a>
             <a href="request.html">Submit Request</a>
         </nav>
+        <div id="google_translate_element"></div>
     </header>
 
     <section>
-        <div class="mission">
-            <p><strong>UN AID REQUEST</strong> facilitates large-scale humanitarian and development funding for state-level programs addressing critical issues such as disaster response, public health emergencies, infrastructure recovery, and community resilience.</p>
-            <p>We connect government and non-governmental initiatives with international donors and aid partners for grants ranging from <strong>$1 million to $15 million</strong>.</p>
-            <p>Applications are reviewed promptly by our expert panel.</p>
-        </div>
+        <h2 style="text-align:center; color:#003366;">Official Aid Request Form</h2>
+        <p style="text-align:center; font-size:1.2em;">For state programs and organizations seeking humanitarian or development support.</p>
 
-        <div class="bio">
-            <img src="https://www.un.org/sites/un2.un.org/files/styles/hero_desktop/public/2023/01/sg_portrait_2023.jpg?itok=3vL0rP9_" alt="Dr. Marcus Chen">
-            <div class="bio-text">
-                <h2>Dr. Marcus Chen<br>Program Director</h2>
-                <p>Former Senior Coordinator at the United Nations Office for Disaster Risk Reduction (UNDRR), Dr. Chen has 20+ years leading multi-million-dollar aid programs across 50+ countries.</p>
-                <p>He established UN AID REQUEST to streamline access to funding for state governments and major NGOs during crises.</p>
-            </div>
-        </div>
+        <form action="https://formspree.io/f/xlgdrypw" method="POST">
+            <label>Organization / Program Name *</label>
+            <input type="text" name="organization" required>
 
-        <div class="team">
-            <h2>Our Expert Review Panel</h2>
-            <p>Applications are reviewed by experienced humanitarian professionals from UN agencies, World Bank partners, and global NGOs.</p>
-            <img src="https://www.un.org/sites/un2.un.org/files/2022/09/un_photo_2022.jpg" alt="Review Team">
-        </div>
+            <label>State / Region *</label>
+            <input type="text" name="state" required>
 
-        <a href="request.html" class="apply-btn">Submit Aid Request</a>
+            <label>Contact Person *</label>
+            <input type="text" name="contact_person" required>
+
+            <label>Email *</label>
+            <input type="email" name="email" required>
+
+            <label>Phone *</label>
+            <input type="tel" name="phone" required>
+
+            <label>Description of Need / Project *</label>
+            <textarea name="description" rows="8" placeholder="Briefly describe the situation and how funding will be used" required></textarea>
+
+            <label>Requested Amount ($1,000,000 – $15,000,000) *</label>
+            <input type="number" name="amount" min="1000000" max="15000000" step="100000" required>
+
+            <button type="submit">Submit Request</button>
+        </form>
     </section>
 
     <footer>
