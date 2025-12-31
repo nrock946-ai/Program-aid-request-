@@ -5,18 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Submit Aid Request - UN AID REQUEST</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Google Translate Widget -->
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,es,de',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
     <style>
         body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; background: #f5f7fa; }
         header { background: linear-gradient(rgba(0, 51, 102, 0.9), rgba(0, 51, 102, 0.8)), url('https://images.unsplash.com/photo-1532629341890-5b1720c2a9f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80'); background-size: cover; color: white; padding: 120px 20px; text-align: center; }
-        .logo-icon { width: 140px; margin-bottom: 30px; }
-        h1 { font-family: 'Playfair Display', serif; font-size: 3.5em; }
+        .logo-icon { width: 140px; margin-bottom: 30px; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.4)); }
+        h1 { font-family: 'Playfair Display', serif; font-size: 3.5em; text-shadow: 0 3px 10px rgba(0,0,0,0.5); }
         nav a { color: white; margin: 0 40px; font-size: 1.3em; font-weight: bold; text-decoration: none; }
+        #google_translate_element { margin-top: 20px; }
+        .goog-te-gadget-simple { background-color: rgba(255,255,255,0.2) !important; border: none !important; padding: 10px 15px !important; border-radius: 10px !important; font-size: 1.1em !important; }
+        .goog-te-gadget-simple a { color: white !important; }
         section { max-width: 900px; margin: 60px auto; padding: 50px; background: white; border-radius: 15px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
         form { display: grid; gap: 25px; }
         label { font-weight: bold; color: #003366; }
         input, textarea { padding: 15px; border: 1px solid #ccc; border-radius: 8px; font-size: 1.1em; }
         button { background: #0066cc; color: white; padding: 20px; font-size: 1.5em; border: none; border-radius: 12px; cursor: pointer; font-weight: bold; }
         button:hover { background: #00509e; }
+        footer { background: #001f3f; color: white; text-align: center; padding: 40px; }
     </style>
 </head>
 <body>
@@ -28,6 +45,7 @@
             <a href="index.html">About Us</a>
             <a href="request.html">Submit Request</a>
         </nav>
+        <div id="google_translate_element"></div>
     </header>
 
     <section>
@@ -60,7 +78,7 @@
         </form>
     </section>
 
-    <footer style="background:#001f3f; color:white; text-align:center; padding:40px;">
+    <footer>
         <p>&copy; 2025 UN AID REQUEST | Supporting States in Crisis</p>
     </footer>
 </body>
